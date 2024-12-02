@@ -1,101 +1,53 @@
-import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+export default function HomePage() {
+    return (
+        <div>
+            this is the main page
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor,
+                deserunt quidem aspernatur similique voluptatum quos explicabo a
+                natus accusamus tenetur consectetur perferendis ipsum sequi
+                sapiente magnam minus, porro eveniet exercitationem autem
+                temporibus nobis. Distinctio aliquid delectus, tempore optio
+                quod praesentium est id voluptates hic vitae aperiam tempora
+                libero minima excepturi repellat nesciunt eveniet necessitatibus
+                voluptate animi. Deserunt animi, corporis suscipit veniam
+                veritatis iste soluta, maiores provident magni quis facilis
+                consectetur hic reiciendis itaque sint quo quam perspiciatis,
+                consequatur adipisci. Nemo laudantium, voluptatum consectetur ea
+                obcaecati culpa cum? Aperiam, omnis reiciendis modi, asperiores
+                placeat in corporis alias, consequuntur non voluptatem
+                repudiandae error deserunt! Dolorum nobis obcaecati eius?
+                Consequuntur modi, excepturi odio quae rerum magnam? Totam at
+                omnis expedita quasi quis nostrum inventore eos error tempora
+                natus, nemo aliquid! Inventore maiores rerum culpa delectus illo
+                vero rem quos eligendi omnis iusto voluptatibus et quas commodi,
+                harum tempora odit fugit nulla praesentium placeat esse. Quo,
+                quasi temporibus! Ut inventore consequuntur, rerum temporibus
+                nemo iste. Optio iusto beatae accusantium cumque, aspernatur
+                minima esse excepturi ipsam earum, sunt harum dicta sed itaque
+                omnis non voluptas maiores tempore. Excepturi, eius cupiditate,
+                enim ea quasi veniam a dignissimos veritatis eum atque nesciunt,
+                aut temporibus. Aliquid numquam quisquam maiores aspernatur
+                facere, sint eius hic reprehenderit repellendus voluptatem
+                dolorum officia repudiandae. Accusantium illo repudiandae libero
+                sint quis quas praesentium, nulla mollitia et cupiditate
+                quibusdam! Laboriosam neque nihil illo laudantium optio ratione!
+                Hic debitis necessitatibus porro, unde accusantium consectetur
+                laudantium odit sunt repudiandae incidunt soluta aut veniam
+                quisquam molestiae, aliquid amet perferendis minima perspiciatis
+                ad quaerat! Quaerat culpa libero necessitatibus natus laudantium
+                voluptatem tempore ratione, officiis sapiente corrupti quibusdam
+                saepe aliquid corporis sit dolor consequatur, vel, quam eius
+                asperiores sunt hic similique minus. Maiores expedita debitis,
+                inventore soluta repudiandae nulla unde. Vitae quas mollitia
+                nemo aliquam temporibus fuga enim voluptatum!
+            </p>
+            <Link className='text-blue-500 underline' href={`/${1}`}>
+                Read More
+            </Link>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    );
 }
